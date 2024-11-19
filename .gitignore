@@ -53,7 +53,6 @@ compile_commands.json
 
 *_qmlcache.qrc
 
-/googletest
 /unittests
 /.cmake
 /.ninja_deps
