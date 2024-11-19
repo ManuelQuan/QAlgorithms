@@ -1,4 +1,6 @@
-project(leetcode)
+cmake_minimum_required(VERSION 3.16)
+project(leetcode LANGUAGES CXX)
+
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
@@ -11,6 +13,9 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
 
 file(GLOB_RECURSE HEADER_FILES ${CMAKE_CURRENT_SOURCE_DIR}/include/*.h*)
 file(GLOB_RECURSE SRC_FILES ${CMAKE_CURRENT_SOURCE_DIR}/src/*.c*)
+
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
+qt_standard_project_setup()
 
 add_library(${PROJECT_NAME}
     SHARED

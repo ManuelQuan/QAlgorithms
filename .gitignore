@@ -67,3 +67,5 @@ CTestTestfile.cmake
 build.ninja
 cmake_install.cmake
 qtcsettings.cmake
+/*/*_autogen
+/*/CMakeFiles/
