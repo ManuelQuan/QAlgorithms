@@ -52,3 +52,19 @@ compile_commands.json
 *creator.user*
 
 *_qmlcache.qrc
+
+/googletest
+/unittests
+/.cmake
+/.ninja_deps
+/.ninja_log
+/.qt/
+/.qtc/
+CMakeCache.txt
+CMakeCache.txt.prev
+/CMakeFiles/
+CTestTestfile.cmake
+/Testing/
+build.ninja
+cmake_install.cmake
+qtcsettings.cmake
