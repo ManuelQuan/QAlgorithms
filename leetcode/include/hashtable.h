@@ -9,7 +9,6 @@ public:
     static QList<T> twoSum(QList<T>& nums,int target);
 };
 
-
 template<typename T>
 QList<T> HashTable::twoSum(QList<T> &nums, int target)
 {
