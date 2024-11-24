@@ -4,12 +4,11 @@
 #include "AbstractSorter.h"
 
 template <typename T>
-class GENERAL_ALGORITHMS_EXPORT SelectionSorter: AbstractSorter<T>
+class GENERAL_ALGORITHMS_EXPORT SelectionSorter: public AbstractSorter<T>
 {
 public:
     SelectionSorter(QList<T>);
     virtual void sort() override;
-    virtual QList<T> getTargets() const override;
 };
 
 template<typename T>
@@ -36,12 +35,6 @@ void SelectionSorter<T>::sort()
     }
 }
 
-template<typename T>
-QList<T> SelectionSorter<T>::getTargets() const
-{
-    return this->targets;
-
-}
 
 
 #endif // SELECTIONSORTER_H

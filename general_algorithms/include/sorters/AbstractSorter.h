@@ -7,12 +7,19 @@ template <typename T>
 class GENERAL_ALGORITHMS_EXPORT AbstractSorter {
 public:
     virtual void sort() = 0;
-    virtual QList<T> getTargets() const = 0;
+    virtual QList<T> getTargets() const;
 protected:
     bool less(int i,int j);
     void exchange(int i,int j);
     QList<T> targets;
 };
+
+template<typename T>
+QList<T> AbstractSorter<T>::getTargets() const
+{
+    return targets;
+
+}
 
 template<typename T>
 bool AbstractSorter<T>::less(int i, int j)
