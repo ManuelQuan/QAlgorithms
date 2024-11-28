@@ -1,7 +1,7 @@
 #ifndef SELECTIONSORTER_H
 #define SELECTIONSORTER_H
 #include "../general_algorithms_global.h"
-#include "AbstractSorter.h"
+#include "AbstractSorter.hpp"
 
 template <typename T>
 class GENERAL_ALGORITHMS_EXPORT SelectionSorter: public AbstractSorter<T>

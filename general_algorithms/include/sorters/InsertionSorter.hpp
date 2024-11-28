@@ -1,6 +1,6 @@
 #ifndef INSERTIONSORTER_H
 #define INSERTIONSORTER_H
-#include "AbstractSorter.h"
+#include "AbstractSorter.hpp"
 #include "general_algorithms_global.h"
 template <typename T>
 class GENERAL_ALGORITHMS_EXPORT InsertionSorter : public AbstractSorter<T>

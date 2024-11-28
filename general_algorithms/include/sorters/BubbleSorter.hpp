@@ -1,7 +1,7 @@
 #ifndef BUBBLESORTER_H
 #define BUBBLESORTER_H
 #include "../general_algorithms_global.h"
-#include "AbstractSorter.h"
+#include "AbstractSorter.hpp"
 
 template <typename T>
 class GENERAL_ALGORITHMS_EXPORT BubbleSorter: public AbstractSorter<T>
